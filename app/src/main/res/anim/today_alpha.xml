@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <alpha
+        android:fromAlpha="0.3"
+        android:toAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:duration="300"/>
+</set>
+
+
+<!--duration : 총 애니메이션 시간-->
+<!--fromAlpha : 시작할 투명값-->
+<!--toAlpha : 종료시 투명값-->
+<!--repeatCount : 실행횟수 / infinite는 무제한-->
+<!--repeatMode : repeat (처음부터 계속 반복) / reverse (시작->종료->시작 형태로 순환-->

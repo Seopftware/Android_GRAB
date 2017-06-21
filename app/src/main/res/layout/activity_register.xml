@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1EBEA5">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CREATE YOUR ACCOUNT"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/NAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  USER NAME"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/gender"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="  GENDER"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="15dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/rgSex"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="10"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbMale"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="5"-->
+                <!--android:text="MALE" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbFemale"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="5"-->
+                <!--android:text="FEMALE" />-->
+
+        <!--</RadioGroup>-->
+
+
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  E-MAIL"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  PASSWORD"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordconfirmtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  PASSWORD  CONFIRM"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL" />
+    </LinearLayout>
+
+</LinearLayout>

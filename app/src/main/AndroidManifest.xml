@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.msi.grab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/grabicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroActivity">
+            //메인 액티비티를 IntroActivity로 변경
+            //===============================================================================
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            //===============================================================================
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SettingsActivity">
+            // adView 설정 (SettingsActivity)
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+        </activity>
+        <activity android:name=".StoryActivity" />
+        <activity android:name=".CalenderActivity" />
+        <activity android:name=".StoryPasswordActivity" />
+        <activity android:name=".HomeRecommendedplaceActivity" />
+        <activity android:name=".SettingsNoticeActivity" />
+        <activity android:name=".SettingsContactActivity" />
+        // ad View 설정
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".StoryInputActivity" />
+        <activity android:name=".HomeRecommandedMenu" />
+        <activity android:name=".StoryViewActivity" />
+        <activity android:name=".Story_InputEditActivity" />
+        <activity android:name=".Calender_Input" />
+        <activity android:name=".HomeActivity_Dday" />
+        <activity android:name=".Calender_View" />
+        <activity android:name=".Calender_Edit"></activity>
+    </application>
+
+</manifest>
